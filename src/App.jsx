@@ -6,6 +6,7 @@ import BgWithTextOppBackGroundGenerator from "./Pages/BgWithTextOppBackGroundGen
 import HeadingGenerator from "./Pages/HeadingGenerator";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import NotFound from "./Components/NotFound";
 
 const App = () => {
   return (
@@ -13,13 +14,14 @@ const App = () => {
       <Navbar /> {/* Add Navbar component here */}
       <Routes>
         {/* Use element instead of component */}
-        <Route path="/" element={<HexBgGenerator />} />
+        <Route path="/bgcolorgenerator" element={<HexBgGenerator />} />
         <Route path="/HexBgGenerator" element={<HexBgGenerator />} />
         <Route path="/HeadingGenerator" element={<HeadingGenerator />} />
         <Route
           path="/BgWithTextOppBackGroundGenerator"
           element={<BgWithTextOppBackGroundGenerator />}
         />
+        <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
       </Routes>
       <Footer /> {/* Add Footer component here */}
     </StoreContextProvider>
