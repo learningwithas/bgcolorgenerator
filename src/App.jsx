@@ -14,7 +14,7 @@ const App = () => {
       <Navbar /> {/* Add Navbar component here */}
       <Routes>
         {/* Use element instead of component */}
-        <Route path="/bgcolorgenerator" element={<HexBgGenerator />} />
+        <Route path="/" element={<HexBgGenerator />} />
         <Route path="/HexBgGenerator" element={<HexBgGenerator />} />
         <Route path="/HeadingGenerator" element={<HeadingGenerator />} />
         <Route

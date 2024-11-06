@@ -4,17 +4,18 @@ import DisplayCode from "../Components/DisplayCode";
 import DisplayResult from "../Components/DisplayResult";
 import BtnGenerate from "../Components/BtnGenerate";
 import Title from "../Components/Title";
+import { Link } from "react-router-dom";
 
 const HexBgGenerator = () => {
   return (
-    <div>
+    <Link to="/HexBgGenerator">
       <Container>
         <Title />
         <DisplayResult />
         <BtnGenerate />
         <DisplayCode />
       </Container>
-    </div>
+    </Link>
   );
 };
 
